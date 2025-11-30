@@ -68,36 +68,36 @@ Designed for small-to-medium companies and training academies (e.g., TAP Academy
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
+```
 tapacademy/
 ├── backend/
-│ ├── config/
-│ │ └── database.js
-│ ├── middleware/
-│ │ └── auth.js
-│ ├── routes/
-│ │ ├── auth.js
-│ │ ├── attendance.js
-│ │ └── dashboard.js
-│ ├── scripts/
-│ │ └── seed.js
-│ ├── server.js
-│ ├── package.json
-│ └── .env.example
+│   ├── config/
+│   │   └── database.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── attendance.js
+│   │   └── dashboard.js
+│   ├── scripts/
+│   │   └── seed.js
+│   ├── server.js
+│   ├── package.json
+│   └── .env.example
 ├── frontend/
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── store/
-│ │ └── App.js
-│ ├── package.json
-│ └── .env.example
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── store/
+│   │   └── App.js
+│   ├── package.json
+│   └── .env.example
 └── README.md
+```
 
-
----
 
 ## Database Schema
 
