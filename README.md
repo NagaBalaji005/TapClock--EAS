@@ -115,8 +115,11 @@ address TEXT,
 work_location VARCHAR(255),
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
+---
+
 ### `attendance` table
 
+```sql
 id SERIAL PRIMARY KEY,
 user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
 date DATE NOT NULL,
@@ -126,3 +129,42 @@ status VARCHAR(20),              -- 'present','late','absent','half-day'
 total_hours DECIMAL(5,2),
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 UNIQUE (user_id, date)
+
+---
+
+## Recommended Indexes
+
+-idx_attendance_user_id on attendance(user_id)
+
+-idx_attendance_date on attendance(date)
+
+-idx_users_email on users(email)
+
+-idx_users_employee_id on users(employee_id)
+
+---
+
+## Environment Variables
+
+Copy .env.example → .env in both backend/ and frontend/ and fill values.
+
+backend/.env.example
+PORT=5000
+NODE_ENV=development
+
+DATABASE_URL=postgres://postgres:password@localhost:5432/attendance_system
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=attendance_system
+DB_USER=postgres
+DB_PASSWORD=your_postgres_password
+
+JWT_SECRET=replace_with_a_strong_random_string
+CORS_ORIGIN=http://localhost:3000
+
+frontend/.env.example
+REACT_APP_API_URL=http://localhost:5000/api
+
+---
+
