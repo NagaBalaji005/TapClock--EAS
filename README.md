@@ -285,15 +285,14 @@ Open a Pull Request
 
 Please follow code style and add tests where applicable.
 
-License
+## License
 This project is released under the MIT License — see the LICENSE file for details.
 
 ## 📽️ Project Explanation Video
+👉 [Click here to watch the full project explanation](https://drive.google.com/file/d/1gUYCdNEhfcYAccxkaHYCnL8jxyyW_7vv/view?usp=drivesdk)
 
-[👉 Click here to watch the full project explanation](https://drive.google.com/file/d/1gUYCdNEhfcYAccxkaHYCnL8jxyyW_7vv/view?usp=drivesdk)
-
-Contact
-Adapala Naga Balaji
-Vignan's Lara Institute of Technology and Science
-📞 +91 93943 14214
+## Contact
+**Adapala Naga Balaji**  
+Vignan's Lara Institute of Technology and Science  
+📞 +91 93943 14214  
 ✉️ adapala.nagabalaji005@gmail.com
