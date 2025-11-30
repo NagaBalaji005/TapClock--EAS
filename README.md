@@ -290,8 +290,7 @@ This project is released under the MIT License — see the LICENSE file for deta
 
 ## 📽️ Project Explanation Video
 
-[👉](https://drive.google.com/file/d/1gUYCdNEhfcYAccxkaHYCnL8jxyyW_7vv/view?usp=drivesdk)
-
+[👉 Click here to watch the full project explanation](https://drive.google.com/file/d/1gUYCdNEhfcYAccxkaHYCnL8jxyyW_7vv/view?usp=drivesdk)
 
 Contact
 Adapala Naga Balaji
