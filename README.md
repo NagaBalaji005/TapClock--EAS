@@ -288,7 +288,10 @@ Please follow code style and add tests where applicable.
 License
 This project is released under the MIT License — see the LICENSE file for details.
 
-## Explanation link: https://drive.google.com/file/d/1gUYCdNEhfcYAccxkaHYCnL8jxyyW_7vv/view?usp=drivesdk
+## 📽️ Project Explanation Video
+
+[👉](https://drive.google.com/file/d/1gUYCdNEhfcYAccxkaHYCnL8jxyyW_7vv/view?usp=drivesdk)
+
 
 Contact
 Adapala Naga Balaji
