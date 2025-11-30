@@ -289,7 +289,7 @@ Please follow code style and add tests where applicable.
 This project is released under the MIT License — see the LICENSE file for details.
 
 ## 📽️ Project Explanation Video
-👉 [Click here to watch the full project explanation](https://drive.google.com/file/d/1gUYCdNEhfcYAccxkaHYCnL8jxyyW_7vv/view?usp=drivesdk)
+-linkedin - [https://drive.google.com/file/d/1gUYCdNEhfcYAccxkaHYCnL8jxyyW_7vv/view?usp=drivesdk]
 
 ## Contact
 **Adapala Naga Balaji**  
