@@ -68,3 +68,61 @@ Designed for small-to-medium companies and training academies (e.g., TAP Academy
 - **Dev Tools:** Nodemon, dotenv
 
 ---
+
+## 📁 Project Structure
+tapacademy/
+├── backend/
+│ ├── config/
+│ │ └── database.js
+│ ├── middleware/
+│ │ └── auth.js
+│ ├── routes/
+│ │ ├── auth.js
+│ │ ├── attendance.js
+│ │ └── dashboard.js
+│ ├── scripts/
+│ │ └── seed.js
+│ ├── server.js
+│ ├── package.json
+│ └── .env.example
+├── frontend/
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── store/
+│ │ └── App.js
+│ ├── package.json
+│ └── .env.example
+└── README.md
+
+---
+
+## Database Schema
+### `users` table
+
+```sql
+id SERIAL PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+email VARCHAR(255) UNIQUE NOT NULL,
+password VARCHAR(255) NOT NULL,  -- hashed
+role VARCHAR(20) NOT NULL,       -- 'employee' or 'manager'
+employee_id VARCHAR(50) UNIQUE,
+department VARCHAR(100),
+date_of_joining DATE,
+contact_number VARCHAR(20),
+address TEXT,
+work_location VARCHAR(255),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+### `attendance` table
+
+id SERIAL PRIMARY KEY,
+user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+date DATE NOT NULL,
+check_in_time TIMESTAMP,
+check_out_time TIMESTAMP,
+status VARCHAR(20),              -- 'present','late','absent','half-day'
+total_hours DECIMAL(5,2),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+UNIQUE (user_id, date)
